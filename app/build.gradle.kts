@@ -49,6 +49,7 @@ android {
 
     buildFeatures {
         viewBinding = true
+        buildConfig = true
     }
 
     buildTypes {
@@ -92,6 +93,7 @@ dependencies {
     implementation(libs.androidx.annotation)
     implementation(libs.glide)
     implementation(libs.converter.gson)
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
 
     // Unit/Integration tests dependencies
     testImplementation(libs.kotest.runner.junit5)
